@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ENERGY‑ENSET | Club Énergétique</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="ENERGY‑ENSET : club étudiant passionné par l'énergie, l'efficacité énergétique et l'innovation à ENSET." />
+  <style>
+    html { scroll-behavior: smooth; }
+    .container { max-width: 1100px; }
+    .active-link { font-weight: 700; text-decoration: underline; }
+    figure img { width: 100%; height: auto; border-radius: 1rem; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Top Bar -->
+  <header class="w-full bg-white/80 backdrop-blur border-b sticky top-0 z-50">
+    <nav class="container mx-auto px-4 flex items-center justify-between py-3">
+      <a href="#accueil" class="flex items-center gap-3">
+        <!-- Remplacez le src ci‑dessous par le nom de VOTRE logo -->
+        <img src="logo.jpg" alt="Logo ENERGY‑ENSET" class="w-10 h-10 rounded-lg object-contain" />
+        <span class="font-extrabold tracking-tight text-lg">ENERGY‑ENSET</span>
+      </a>
+      <ul class="hidden md:flex items-center gap-6 font-medium">
+        <li><a class="navlink" href="#accueil">Accueil</a></li>
+        <li><a class="navlink" href="#bureau">Bureau</a></li>
+        <li><a class="navlink" href="#plan-annuel">Plan annuel</a></li>
+        <li><a class="navlink" href="#projets">Projets</a></li>
+        <li><a class="navlink" href="#missions">Missions</a></li>
+        <li><a class="navlink" href="#contact">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden px-3 py-2 rounded-xl border">Menu</button>
+    </nav>
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+      <ul class="container mx-auto px-4 py-3 grid gap-2 font-medium">
+        <li><a class="navlink block py-2" href="#accueil">Accueil</a></li>
+        <li><a class="navlink block py-2" href="#bureau">Bureau</a></li>
+        <li><a class="navlink block py-2" href="#plan-annuel">Plan annuel</a></li>
+        <li><a class="navlink block py-2" href="#projets">Projets</a></li>
+        <li><a class="navlink block py-2" href="#missions">Missions</a></li>
+        <li><a class="navlink block py-2" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Accueil -->
+  <section id="accueil" class="container mx-auto px-4 py-10 md:py-16">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">ENERGY‑ENSET</h1>
+        <p class="mt-4 text-lg md:text-xl">Club d'innovation énergétique, d'efficacité énergétique et de transition durable à l'ENSET. Nous rassemblons des étudiant·e·s de profils variés autour de projets techniques, de compétitions, et d'une culture de partage.</p>
+        <p class="mt-4">Notre club s'intéresse à <strong>tout ce qui est énergétique</strong> : production (solaire, éolien, stockage), conversion (électronique de puissance), gestion et contrôle (smart‑grids, EMS), mobilité (véhicules électriques, éco‑conduite) et sobriété (audit et efficacité énergétique). Nous organisons des <strong>compétitions internes</strong> pour former nos membres et participons à des <strong>compétitions externes</strong> inter‑écoles afin de représenter l'ENSET avec excellence.</p>
+        <p class="mt-4">Au‑delà de la technique, nous développons des compétences humaines : travail en équipe, gestion de projet, communication, partenariats industriels et recherche de sponsoring. Rejoindre ENERGY‑ENSET, c'est apprendre en faisant, depuis l'idée jusqu'au prototype et à la démonstration publique.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#projets" class="px-5 py-3 rounded-2xl bg-gray-900 text-white font-semibold">Voir nos projets</a>
+          <a href="#contact" class="px-5 py-3 rounded-2xl border font-semibold">Nous contacter</a>
+        </div>
+      </div>
+      <figure class="bg-white p-3 rounded-2xl shadow">
+        <!-- Image d'accueil (optionnelle) -->
+        <img src="hero-energie.jpg" alt="Membres du club en atelier énergie" />
+        <figcaption class="mt-3 text-sm text-gray-600">Atelier d'initiation aux systèmes énergétiques – ENERGY‑ENSET.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Bureau -->
+  <section id="bureau" class="bg-white border-t">
+    <div class="container mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Bureau</h2>
+      <p class="mt-2 text-gray-600">Équipe dirigeante 2024‑2025.</p>
+      <!-- Grille du bureau -->
+      <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Président -->
+        <article class="bg-gray-50 rounded-2xl p-4 shadow">
+          <img src="president.jpg" alt="Président - Jamal Kouassy" class="w-full h-48 object-cover rounded-xl" />
+          <h3 class="mt-3 font-bold">Président</h3>
+          <p>Jamal Kouassy</p>
+        </article>
+        <!-- Vice-président -->
+        <article class="bg-gray-50 rounded-2xl p-4 shadow">
+          <img src="vice_president.jpg" alt="Vice‑président - NACIM EL IDRISSI ABOUHILAL" class="w-full h-48 object-cover rounded-xl" />
+          <h3 class="mt-3 font-bold">Vice‑président</h3>
+          <p>NACIM EL IDRISSI ABOUHILAL</p>
+        </article>
+        <!-- Responsable Événement -->
+        <article class="bg-gray-50 rounded-2xl p-4 shadow">
+          <img src="responsable_evenement.jpg" alt="Responsable Événement - OUDFEL MEHDI" class="w-full h-48 object-cover rounded-xl" />
+          <h3 class="mt-3 font-bold">Responsable Événement</h3>
+          <p>OUDFEL MEHDI</p>
+        </article>
+        <!-- Responsable Média -->
+        <article class="bg-gray-50 rounded-2xl p-4 shadow">
+          <img src="responsable_media.jpg" alt="Responsable Média - HAJJOULI KAWTAR" class="w-full h-48 object-cover rounded-xl" />
+          <h3 class="mt-3 font-bold">Responsable Média</h3>
+          <p>HAJJOULI KAWTAR</p>
+        </article>
+        <!-- Responsable Sponsoring -->
+        <article class="bg-gray-50 rounded-2xl p-4 shadow">
+          <img src="responsable_sponsoring.jpg" alt="Responsable Sponsoring - OUCHAIB ABOUBAKER" class="w-full h-48 object-cover rounded-xl" />
+          <h3 class="mt-3 font-bold">Responsable Sponsoring</h3>
+          <p>OUCHAIB ABOUBAKER</p>
+        </article>
+        <!-- Responsable Technique -->
+        <article class="bg-gray-50 rounded-2xl p-4 shadow">
+          <img src="responsable_technique.jpg" alt="Responsable Technique - HADDAD YOUNES" class="w-full h-48 object-cover rounded-xl" />
+          <h3 class="mt-3 font-bold">Responsable Technique</h3>
+          <p>HADDAD YOUNES</p>
+        </article>
+        <!-- Secrétaire Générale -->
+        <article class="bg-gray-50 rounded-2xl p-4 shadow">
+          <img src="secretaire_generale.jpg" alt="Secrétaire Générale - AIT BELLA SOULIMANE" class="w-full h-48 object-cover rounded-xl" />
+          <h3 class="mt-3 font-bold">Secrétaire Générale</h3>
+          <p>AIT BELLA SOULIMANE</p>
+        </article>
+        <!-- Responsable Trésorerie -->
+        <article class="bg-gray-50 rounded-2xl p-4 shadow">
+          <img src="responsable_tresorerie.jpg" alt="Responsable Trésorerie - NAIM REDOUANE" class="w-full h-48 object-cover rounded-xl" />
+          <h3 class="mt-3 font-bold">Responsable Trésorerie</h3>
+          <p>NAIM REDOUANE</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan Annuel -->
+  <section id="plan-annuel" class="container mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold">Objectifs & Plan de l'année</h2>
+    <p class="mt-2 text-gray-600">De notre Kick‑off de début d'année jusqu'à la clôture, voici une proposition de feuille de route.</p>
+
+    <ol class="mt-6 grid gap-6">
+      <li class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Septembre – Kick‑off & Recrutement</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Lancement officiel, présentation du club et des projets phares.</li>
+          <li>Campagne de recrutement, constitution des pôles (technique, média, événement, sponsoring).</li>
+          <li>Ateliers d'initiation : sécurité en atelier, bases de l'électricité/électronique de puissance.</li>
+        </ul>
+      </li>
+      <li class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Octobre – Formation & Choix des Projets</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Sessions techniques (CAO, Arduino/ESP32, batteries, BMS, panneaux solaires, Bluetooth).</li>
+          <li>Découpage des projets, cahiers des charges, planning et budgets.</li>
+        </ul>
+      </li>
+      <li class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Novembre‑Décembre – Prototypage</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Fabrication des premiers prototypes (véhicule électrique, Toumobil, station solaire).</li>
+          <li>Tests, itérations, documentation (Git/Drive), recherche de sponsors.</li>
+        </ul>
+      </li>
+      <li class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Janvier‑Mars – Intégration & Compétitions internes</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Intégration mécanique/électronique/logiciel, essais de performance et sécurité.</li>
+          <li>Compétitions internes de validation (endurance, consommation, autonomie).</li>
+        </ul>
+      </li>
+      <li class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Avril‑Mai – Préparation aux évènements externes</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Présélections et inscriptions, mise à niveau du véhicule pour la Shell Eco‑marathon.</li>
+          <li>Communication : vidéos, affiches, réseaux sociaux, relations presse.</li>
+        </ul>
+      </li>
+      <li class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Juin – Démos Publiques & Partenariats</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Démonstrations à l'ENSET et chez les partenaires industriels.</li>
+          <li>Bilan technique et financier intermédiaire.</li>
+        </ul>
+      </li>
+      <li class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Juillet – Clôture & Passation</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Rapports finaux, vidéo récap, remise des certificats aux membres actifs.</li>
+          <li>Passation au prochain bureau, archivage des ressources.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Projets Réalisés -->
+  <section id="projets" class="bg-white border-t">
+    <div class="container mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Projets réalisés</h2>
+
+      <!-- Shell Eco-marathon -->
+      <article class="mt-8 grid md:grid-cols-2 gap-6 items-start">
+        <div>
+          <h3 class="text-xl font-bold">Prototype électrique – Shell Eco‑marathon</h3>
+          <p class="mt-2">Participation à la compétition internationale dédiée à l'efficience énergétique. Notre équipe conçoit un <strong>prototype électrique</strong> optimisé : châssis léger, électronique de puissance, gestion batterie (BMS) et stratégie de conduite pour minimiser la consommation.</p>
+          <p class="mt-2">Objectifs : sécurité, fiabilité, faible consommation, et conformité au règlement. Ce projet mobilise mécatronique, contrôle/commande et data‑logging.</p>
+        </div>
+        <figure class="bg-gray-50 p-3 rounded-2xl shadow">
+          <img src="projet_shell_eco_marathon.jpg" alt="Prototype électrique – Shell Eco‑marathon" />
+          <figcaption class="mt-2 text-sm text-gray-600">Image du prototype / rendu – <em>placer le fichier</em> <code>projet_shell_eco_marathon.png</code>.</figcaption>
+        </figure>
+      </article>
+
+      <!-- Toumobil autonome -->
+      <article class="mt-10 grid md:grid-cols-2 gap-6 items-start">
+        <div>
+          <h3 class="text-xl font-bold">TOUMOBIL autonome – commande Bluetooth (Auto‑Car)</h3>
+          <p class="mt-2">Réalisation d'une voiture autonome pilotable via <strong>application Bluetooth</strong> (Android). Architecture typique : microcontrôleur (ESP32/Arduino), pont en H, capteurs d'obstacles, modes manuel/autonome, et application mobile pour le contrôle.</p>
+          <p class="mt-2">Livrables : châssis, électronique, firmware, appli mobile, manuel d'utilisation et vidéo de démonstration.</p>
+        </div>
+        <figure class="bg-gray-50 p-3 rounded-2xl shadow">
+          <img src="projet_toumobil_auto_car.jpg" alt="Projet TOUMOBIL autonome – Bluetooth" />
+          <figcaption class="mt-2 text-sm text-gray-600">Placer le fichier <code>projet_toumobil_auto_car.png</code> sous ce bloc.</figcaption>
+        </figure>
+      </article>
+
+      <!-- Station énergétique solaire -->
+      <article class="mt-10 grid md:grid-cols-2 gap-6 items-start">
+        <div>
+          <h3 class="text-xl font-bold">Station énergétique solaire – Micro‑réseau</h3>
+          <p class="mt-2">Conception d'une <strong>station énergétique</strong> basée sur des panneaux solaires : dimensionnement des modules, convertisseurs DC/DC, onduleur, stockage batterie et supervision. Cas d'usage : alimentation d'un labo ou d'un stand d'événement.</p>
+          <p class="mt-2">Mise en place d'un monitoring (tension, courant, puissance, SOC) et d'une stratégie de charge sûre.</p>
+        </div>
+        <figure class="bg-gray-50 p-3 rounded-2xl shadow">
+          <img src="projet_station_energetique_solaire.jpg" alt="Station énergétique solaire – Micro‑réseau" />
+          <figcaption class="mt-2 text-sm text-gray-600">Placer l'image <code>projet_station_energetique_solaire.png</code>.</figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <!-- Missions des Responsables -->
+  <section id="missions" class="container mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold">Missions de chaque responsable</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Président – Jamal Kouassy</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Définir la vision, coordonner les pôles, assurer la qualité et la sécurité.</li>
+          <li>Représenter le club auprès de l'administration et des partenaires.</li>
+          <li>Valider les budgets, arbitrer les priorités, piloter la passation.</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Vice‑président – NACIM EL IDRISSI ABOUHILAL</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Suivre l'avancement des projets et lever les blocages.</li>
+          <li>Assurer la continuité des activités et l'animation des réunions.</li>
+          <li>Remplacer le président en son absence.</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Responsable Événement – OUDFEL MEHDI</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Planifier les ateliers, conférences et compétitions internes.</li>
+          <li>Logistique : réservations, matériel, sécurité, accueil.</li>
+          <li>Gestion des inscriptions et feedback post‑événement.</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Responsable Média – HAJJOULI KAWTAR</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Stratégie de communication : visuels, vidéos, réseaux sociaux.</li>
+          <li>Couverture photo/vidéo des projets et événements.</li>
+          <li>Charte graphique et gestion du site web.</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Responsable Sponsoring – OUCHAIB ABOUBAKER</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Prospection et négociation des partenariats.</li>
+          <li>Dossiers de sponsoring, budget, suivi des contreparties.</li>
+          <li>Veille d'opportunités (concours, subventions, dotations).</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Responsable Technique – HADDAD YOUNES</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Encadrement technique, architecture système, sécurité électrique.</li>
+          <li>Revue de conception : mécanique, électronique, logiciel.</li>
+          <li>Planning atelier, gestion outillage et stocks.</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Secrétaire Générale – AIT BELLA SOULIMANE</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Organisation administrative : PV de réunion, agendas, archivage.</li>
+          <li>Gestion des adhésions, attestations et communication interne.</li>
+          <li>Suivi des deadlines et conformité.</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow border">
+        <h3 class="font-bold">Responsable Trésorerie – NAIM REDOUANE</h3>
+        <ul class="list-disc ml-6 mt-2 text-sm">
+          <li>Budget annuel, suivi des dépenses et justificatifs.</li>
+          <li>Gestion des achats, factures et trésorerie des projets.</li>
+          <li>Rapport financier trimestriel et bilan annuel.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white border-t">
+    <div class="container mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Contact</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <form class="bg-gray-50 rounded-2xl p-6 shadow">
+          <label class="block text-sm font-medium">Nom</label>
+          <input class="mt-1 w-full rounded-xl border p-3" placeholder="Votre nom" />
+          <label class="block text-sm font-medium mt-4">Email</label>
+          <input class="mt-1 w-full rounded-xl border p-3" placeholder="votre@email.com" />
+          <label class="block text-sm font-medium mt-4">Message</label>
+          <textarea class="mt-1 w-full rounded-xl border p-3" rows="5" placeholder="Votre message..."></textarea>
+          <button type="button" class="mt-4 px-5 py-3 rounded-2xl bg-gray-900 text-white font-semibold">Envoyer</button>
+          <p class="text-xs text-gray-500 mt-2">(Formulaire démo côté client)</p>
+        </form>
+        <div class="bg-gray-50 rounded-2xl p-6 shadow">
+          <p><strong>Téléphone :</strong> <a href="tel:+212655445345" class="underline">0655445345</a></p>
+          <p class="mt-2"><strong>Email :</strong> <a href="mailto:kouassyjamal@gamail.com" class="underline">kouassyjamal@gamail.com</a></p>
+          <p class="mt-4 text-sm text-gray-600">Logo : ajoutez votre fichier dans <code>./assets/images/logo.png</code> (nom conseillé). Si votre email est <em>gmail.com</em>, pensez à corriger dans le code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container mx-auto px-4 py-10 text-sm text-gray-500">
+    © <span id="year"></span> ENERGY‑ENSET — Club énergétique de l'ENSET. Tous droits réservés.
+  </footer>
+
+  <script>
+    // Année automatique
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Menu mobile
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Surligner le lien actif selon la section visible
+    const links = document.querySelectorAll('.navlink');
+    const sections = Array.from(document.querySelectorAll('section')).map(s => ({ id: s.id, el: s }));
+    const onScroll = () => {
+      const y = window.scrollY + 120; // marge pour l'en‑tête
+      let current = sections[0]?.id;
+      for (const s of sections) {
+        if (s.el.offsetTop <= y) current = s.id;
+      }
+      links.forEach(a => {
+        const href = a.getAttribute('href')?.replace('#','');
+        a.classList.toggle('active-link', href === current);
+      });
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+
+  <!--
+  =====================
+  GUIDE D'INTÉGRATION DES IMAGES (noms conseillés)
+  Placez vos fichiers dans: ./assets/images/
+
+  Logo du club
+  - logo.png
+
+  Bureau (photos 1:1 ou 4:3 conseillées)
+  - president.png
+  - vice_president.png
+  - responsable_evenement.png
+  - responsable_media.png
+  - responsable_sponsoring.png
+  - responsable_technique.png
+  - secretaire_generale.png
+  - responsable_tresorerie.png
+
+  Accueil (optionnelle)
+  - hero-energie.jpg
+
+  Projets
+  - projet_shell_eco_marathon.png
+  - projet_toumobil_auto_car.png
+  - projet_station_energetique_solaire.png
+
+  Vous pouvez garder vos propres noms (ex: PRESEDENT.PNG). Si vous préférez, renommez
+  vos fichiers pour correspondre à la liste ci‑dessus et mettez‑les dans le dossier indiqué.
+  =====================
+  -->
+</body>
+</html>
